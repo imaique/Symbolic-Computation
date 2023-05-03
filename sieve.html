@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>The Sieve of Eratosthenes</h1>
+    <div id="settings">
+      <label for="min">Start:</label>
+      <input type="number" id="min" name="min" min="1" max="100" value="1" />
+      <label for="max">End:</label>
+      <input type="number" id="max" name="max" min="1" max="100" value="100" />
+      <button>Visualize</button>
+    </div>
+    <div id="grid"></div>
+  </body>
+  <script defer src="src/sieve.js"></script>
+</html>
