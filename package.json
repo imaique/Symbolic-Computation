@@ -1,0 +1,23 @@
+{
+  "dependencies": {
+    "common-js": "^0.3.8",
+    "typescript": "^5.0.4"
+  },
+  "name": "symbolic-computation",
+  "description": "Visualization of interesting algorithms I learned during my Techniques in Symbolic Computation class (a.k.a. Introduction to Higher Algebra)",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/imaique/Symbolic-Computation.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/imaique/Symbolic-Computation/issues"
+  },
+  "homepage": "https://github.com/imaique/Symbolic-Computation#readme"
+}

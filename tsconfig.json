@@ -1,0 +1,10 @@
+{
+  "compileOnSave": true,
+  "compilerOptions": {
+    "experimentalDecorators": true,
+    "module": "ES6",
+    "target": "ES6",
+    "outDir": "ts-built",
+    "rootDir": "src"
+  }
+}

@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="sieve.css" />
+    <title>Sieve of Eratosthenes</title>
   </head>
   <body>
     <h1>The Sieve of Eratosthenes</h1>
@@ -13,9 +14,12 @@
       <input type="number" id="min" name="min" min="1" max="100" value="1" />
       <label for="max">End:</label>
       <input type="number" id="max" name="max" min="1" max="100" value="100" />
-      <button>Visualize</button>
+      <button id="visualizebtn">Visualize</button>
     </div>
-    <div id="grid"></div>
+    <div>
+      <div>Removing multiples of <b id="current">2</b></div>
+      <div id="grid" class="grid"></div>
+    </div>
   </body>
-  <script defer src="src/sieve.js"></script>
+  <script defer type="module" src="ts-built/sieve/sieve.js"></script>
 </html>
