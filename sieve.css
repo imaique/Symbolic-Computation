@@ -11,3 +11,16 @@
   width: 30px;
   height: 30px;
 }
+
+.circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 70%;
+  height: 70%;
+  border-radius: 50%;
+  border: 3px solid;
+  text-align: center;
+  line-height: 40px;
+}

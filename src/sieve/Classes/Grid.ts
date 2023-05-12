@@ -3,6 +3,7 @@ import NodeSieveVisualizer from './NodeSieveVisualizer.js';
 
 export default class Grid {
   gridElement: HTMLElement;
+  stateElement: HTMLElement;
   cells: Array<Cell>;
   end: number;
 
@@ -10,6 +11,11 @@ export default class Grid {
     this.gridElement = gridElement;
     this.cells = [];
     this.end = 100;
+    this.stateElement = document.getElementById('state');
+  }
+  updateState(s: string) {
+    console.log(this.stateElement);
+    this.stateElement.innerHTML = s;
   }
 
   generateCells(start: number, end: number) {
@@ -28,6 +34,6 @@ export default class Grid {
 
   visualize() {
     const visualizer = new NodeSieveVisualizer();
-    visualizer.visualize(this.cells, this.end);
+    visualizer.visualize(this.cells, this.end, 10, this.updateState.bind(this));
   }
 }
